@@ -38,7 +38,6 @@ public class Add extends JFrame implements ActionListener{
 
 
     }
-
     public static void main(String[] args) {
         new Add().setVisible(true);
     }
