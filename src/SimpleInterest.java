@@ -44,13 +44,13 @@ public class SimpleInterest extends JFrame implements ActionListener{
         rate.setBounds(50,90,100,20);
         add(rate);
 
-        label = new JLabel("Simple Interest");
+        label = new JLabel("Result");
         label.setForeground(Color.RED);
         label.setBounds(70,130,90,20);
         add(label);
 
-        Btn = new JButton("I");
-        Btn.setBounds(70,160,50,30);
+        Btn = new JButton("Simple interest");
+        Btn.setBounds(50,160,130,20);
         add(Btn);
         Btn.addActionListener(this);
 

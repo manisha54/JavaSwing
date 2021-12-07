@@ -10,6 +10,8 @@ public class Showpassword extends JFrame {
     JPasswordField pass;
     JButton Btn;
     JCheckBox showpassword;
+
+
     public Showpassword(){
         setTitle("Login Page");
         setSize(500,350);
@@ -43,6 +45,7 @@ public class Showpassword extends JFrame {
         showpassword.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 if (showpassword.isSelected())
                 {
                     pass.setEchoChar((char)0);
@@ -56,7 +59,24 @@ public class Showpassword extends JFrame {
         Btn = new JButton("LOGIN" );
         Btn.setBounds(150,200,130,30);
         Btn.setForeground(Color.magenta);
+        Btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource().equals(Btn))
+                {
+                    String username = user.getText();
+                    JOptionPane.showConfirmDialog(null,"Logged in as"+username);
+                    dispose();
+                    new HelloWorld().setVisible(true);
+
+
+                }
+
+            }
+        });
         add(Btn);
+
+
 
 
 

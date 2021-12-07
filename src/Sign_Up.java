@@ -6,14 +6,16 @@ public class Sign_Up extends JFrame{
     JLabel labelLastName;
     JLabel labelpassword;
     JLabel labelemail;
+    JLabel labelPhonenumber;
     JButton Btn;
     JTextField FirstName;
     JTextField LastName;
     JPasswordField password;
     JTextField email;
+    JTextField number;
     public Sign_Up(){
-        setTitle("Sign Page");
-        setSize(700,550);
+        setTitle("Sign_Up Page");
+        setSize(500,350);
         setLocation(100,100);
         setResizable(false);
         setLayout(null);
@@ -37,11 +39,18 @@ public class Sign_Up extends JFrame{
         labelpassword.setBounds(50,110,200,20);
         add(labelpassword);
 
-        labelemail = new JLabel("Email address");
-        labelemail.setBounds(50,140,250,20);
+        labelemail = new JLabel("Phone Number");
+        labelemail.setBounds(40,150,280,20);
         labelemail.setForeground(Color.GREEN);
         labelemail.setFont(new Font("Arial",Font.BOLD,20));
         add(labelemail);
+
+
+        labelPhonenumber = new JLabel("Email address");
+        labelPhonenumber.setBounds(40,190,280,20);
+        labelPhonenumber.setForeground(Color.GREEN);
+        labelPhonenumber.setFont(new Font("Arial",Font.BOLD,20));
+        add(labelPhonenumber);
 
 
         FirstName = new JTextField();
@@ -56,9 +65,13 @@ public class Sign_Up extends JFrame{
         email= new JTextField();
         email.setBounds(180,150,120,20);
         add(email);
+        number= new JTextField();
+        number.setBounds(180,190,120,20);
+        add(number);
+
 
         Btn = new JButton("SIGN UP" );
-        Btn.setBounds(160,300,150,30);
+        Btn.setBounds(160,240,150,30);
         add(Btn);
 
 
